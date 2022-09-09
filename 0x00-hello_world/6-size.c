@@ -3,6 +3,8 @@
 /**
  *Main - Enrty point
  *
+ * Description - This program prints -programming is like multilingual puzzle
+ *
  *Return: Always 0
 */
 int main(void)
