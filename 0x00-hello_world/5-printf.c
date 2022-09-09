@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * Main - Printing. entry point
+ * main - Entry point
  *
  * Description: useing the main funtion
  * this prints "with proer grammar, but the outcome is a piece of art,"
- * Return - Always zero 0
+ * Return: Always return 0
 */
 int main(void)
 {
