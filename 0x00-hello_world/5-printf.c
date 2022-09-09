@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Printing. entry point
+ * Main - Printing. entry point
  *
  * Return - Always zero 0
 */
