@@ -4,10 +4,12 @@
  *
  * Description: using the main function
  * this program prints the mixed of capital and small alphabets
+ * Return: 0
 */
 int main(void)
 {
 	char ch;
+
 	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
 		putchar(ch);
