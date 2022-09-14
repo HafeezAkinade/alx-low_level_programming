@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * print_time_table - this function prints the times table with parameter
+ * print_time_table -  prints the times table with parameter
  * @n: this is the parameter used for the function
  * Return: always 0
 */
 void print_times_table(int n)
 {
 	int digit, mult, result;
+
 	if (n <= 15 && n >= 0)
 	{
 		for (digit = 0; digit <= n; digit++)
@@ -24,7 +25,7 @@ void print_times_table(int n)
 					_putchar(' ');
 				if (result >= 100)
 				{
-					_putchar((result /100) + '0');
+					_putchar((result / 100) + '0');
 					_putchar((result / 10) % 10 + '0');
 				}
 				else if (result <= 99 && result >= 10)
