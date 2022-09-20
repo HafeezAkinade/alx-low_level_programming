@@ -22,10 +22,10 @@ void rev_string(char *s)
 }
 
 /**
- * _strken - returns the length of the string
+ * _strlen - returns the length of the string
  * @s: string
  *
- * Retun: the length of the given string
+ * Return: length of the given string
 */
 
 int _strlen(char *s)
