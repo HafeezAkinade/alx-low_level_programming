@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_line - prints a straight line
@@ -11,7 +11,7 @@ void print_line(int n)
 {
 	while (n-- > 0)
 	{
-		purchar('_');
+		putchar('_');
 	}
 	putchar('\n');
 }
