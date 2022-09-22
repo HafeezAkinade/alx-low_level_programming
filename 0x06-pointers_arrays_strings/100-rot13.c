@@ -7,40 +7,21 @@
  * Return: address of the encoded string
 */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	int i = 0;
-
-	while (str[i] != '\0')
+	int i, j;
+       char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	for (i = 0; *(s + i); i++)
 	{
-		str[i] = transform_s(str[i]);
-		i++;
-	}
-	return (str);
-}
-
-/**
- * transform_2 - helper function to map a letter with it's rot13 encoding
- * @x: char to be encoded
- *
- * Return: the encoded char
-*/
-
-char transform_2(char x)
-{
-	char one[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char two[52] = "NOPRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	int i = 0;
-	char replacement = x;
-
-	while (i < 52)
-	{
-		if (x == one[i])
+		for (j = 0; j < 52; j++)
 		{
-			replacement = two[i];
-			break;
+			if (a[j] == *(s + i))
+			{
+				*(s + i) = b[j];
+				break;
+			}
 		}
-		i++
 	}
-	return (replacement);
+	return (s);
 }
