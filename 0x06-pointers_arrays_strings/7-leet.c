@@ -4,7 +4,7 @@
  * leet - this encdode a strng into 1337
  * @s: string to be encoded
  *
- * Return: address of the encoded string
+ * Return: address of s
 */
 
 char *leet(char *s)
@@ -18,7 +18,7 @@ char *leet(char *s)
 		for (j = 0; j <= 9; j++)
 		{
 			if (a[j] == *(s + i))
-				*(s + i) = n[j];
+				*(s + i) = b[j];
 		}
 	}
 	return (s);
