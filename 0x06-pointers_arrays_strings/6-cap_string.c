@@ -3,7 +3,7 @@
 /**
  * cap_string - this functions capitalise first character of a word
  * @str: string to be capitalised
- * Return: returns the capitalised string.
+ * Return: returns the capitalised string
 */
 
 char *cap_string(char *str)
@@ -21,7 +21,7 @@ char *cap_string(char *str)
 			{
 				for (j = 0; j <= 12; j++)
 				{
-					if (a[j] == *(str + i -1))
+					if (a[j] == *(str + i - 1))
 						*(str + i) -= 'a' - 'A';
 				}
 			}
