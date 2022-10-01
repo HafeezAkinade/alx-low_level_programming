@@ -7,7 +7,7 @@
  * @argc: number of arguments passed to the function
  * @argv: argument vector of pointers to strings
  *
- * Return: 0 if no erros, else 1
+ * Return: returns 0 if no error, else 1.
 */
 int main(int argc, char *argv[])
 {
@@ -24,11 +24,10 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	for (i = 1; i < argc; i++)
+	for (i = 1; i < argv; i++)
 	{
 		a += atoi(argv[i]);
 	}
 	printf("%d\n", a);
 	return (0);
-}
 }
