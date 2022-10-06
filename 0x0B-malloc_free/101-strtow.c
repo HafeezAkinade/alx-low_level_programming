@@ -64,9 +64,35 @@ char **strtow(char *str)
 	if (split != NULL)
 	{
 		for (i = 0; i <= len(str && words; i++)
-				{
-				if ((str[i] != ' ') && (str[i] != '\0'))
+		{
+			if ((str[i] != ' ') && (str[i] != '\0'))
 				size++;
-				else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
+			else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
+			{
+				split[j] = (char *)malloc(sizeof(char) * size + 1);
+				if (split[j] != NULL)
 				{
-				split[i]
+					while (temp < size)
+					{
+						split[j][temp] = str[(i - size) + temp];
+						temp++;
+					}
+					split[j][temp] = '\0';
+					size = temp = 0;
+					j++;
+				}
+				else
+				{
+					while (j-- >= 0)
+						free(split[j]);
+					free(split);
+					return (NULL);
+				}
+			}
+		}
+		split[words] = NULL;
+		return (split);
+	}
+	else
+		return (NULL);
+}
